@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.tex": "bibtex",
+        "dp_filter.h": "c"
+    }
+}
