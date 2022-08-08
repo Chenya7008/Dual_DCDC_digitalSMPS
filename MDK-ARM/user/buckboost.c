@@ -6,6 +6,8 @@
 float V_in,V_out,Curr_in,Curr_out,Chassis_Curr;
 float buff_1,buff_2,buff_3,buff_4,buff_5;
 
+float Output_Power;
+
 ELEC_value_struct Fuck;
 uint32_t fuck;
 PID_STRUCT Vin_loop;
@@ -157,7 +159,7 @@ void power_start()
 		V_in = buff_1 /4095.0 *3.3f *  Fuck.Votage_ratio;
 		V_out = buff_2 /4095.0 *3.3f * Fuck.Votage_ratio;
 		//Curr_in = buff_3 /4095.0 *3.3f *  Fuck.Current_ratio;
-		Curr_out = (buff_3 /4095.0 *3.3f)*3.892f - 0.1047f;
+		Curr_out = (buff_3 /4095.0 *3.3f)*3.7636f - 0.0263f;
 		//Chassis_Curr = buff_5 /4095.0 *3.3f *  Fuck.Current_ratio;
 	  
 	/*
@@ -180,6 +182,9 @@ void power_start()
 	 {
 		 capcurr = 0.1;
 	 }
+	 
+	 capcurr *= 0.9;
+	 
    Cout_loop.Ref = capcurr;
    Cout_loop.Fdb = Curr_out;
    pid_func.calc( &Cout_loop );  // 电流环PID计算
@@ -188,7 +193,7 @@ void power_start()
 	 //m_pwm_cmp = Vout_loop.Output;
 	 Vout_loop.Output = m_pwm_cmp;// 保存本次PWM比较值
    Cout_loop.Output = m_pwm_cmp;// 保存本次PWM比较值
-
+		
     pwm_update( m_pwm_cmp );         // 更新PWM
 	
 	/*
@@ -225,5 +230,11 @@ void power_start()
 	}
 	*/
 	
+}
+void math(void)
+{
+	
+	Output_Power = V_out * 	Curr_out;
+
 }
 	

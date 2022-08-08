@@ -208,6 +208,7 @@ void TIM6_DAC1_IRQHandler(void)
   /* USER CODE BEGIN TIM6_DAC1_IRQn 0 */
 	//pwm_update(0.50F * HRTIM1->sMasterRegs.MPER);
 	power_start();
+	math();
   /* USER CODE END TIM6_DAC1_IRQn 0 */
   HAL_TIM_IRQHandler(&htim6);
   /* USER CODE BEGIN TIM6_DAC1_IRQn 1 */

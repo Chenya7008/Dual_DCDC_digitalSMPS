@@ -36,10 +36,11 @@ typedef struct
 
 extern ELEC_value_struct Fuck;
 //extern uint32_t	 adc2_in_buff[adc2_channalNum];
-extern float V_in,V_out,Curr_in,Curr_out,Chassis_Curr;
+extern float V_in,V_out,Curr_in,Curr_out,Chassis_Curr,Output_Power;
 
 extern void buckboost_ctrl(void);//buckboost环路控制
 extern void pwm_update(uint32_t compareValue);//buckboost_PWM更新函数
 extern void power_start();
 extern void buckboost_init(void);
+extern void math(void);
 #endif
