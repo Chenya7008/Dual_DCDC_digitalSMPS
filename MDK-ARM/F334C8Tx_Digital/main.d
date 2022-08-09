@@ -39,6 +39,9 @@ f334c8tx_digital\main.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_
 f334c8tx_digital\main.o: .\user\buckboost.h
 f334c8tx_digital\main.o: ../Core/Inc/main.h
 f334c8tx_digital\main.o: .\user\pid.h
+f334c8tx_digital\main.o: .\user\oled\OLED_SSD1306.h
+f334c8tx_digital\main.o: .\user\oled\FontLib.h
+f334c8tx_digital\main.o: .\user\oled\software_i2c.h
 f334c8tx_digital\main.o: ../Core/Inc/adc.h
 f334c8tx_digital\main.o: ../Core/Inc/can.h
 f334c8tx_digital\main.o: ../Core/Inc/dma.h

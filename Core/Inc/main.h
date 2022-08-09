@@ -34,6 +34,8 @@ extern "C" {
 /* USER CODE BEGIN Includes */
 #include "buckboost.h"
 #include "pid.h"
+#include "OLED_SSD1306.h"
+
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -59,6 +61,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define SDA_Pin GPIO_PIN_1
+#define SDA_GPIO_Port GPIOB
+#define SCL_Pin GPIO_PIN_2
+#define SCL_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

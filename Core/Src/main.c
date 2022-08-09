@@ -99,6 +99,8 @@ int main(void)
   MX_HRTIM1_Init();
   MX_TIM6_Init();
   /* USER CODE BEGIN 2 */
+	Software_I2C_GPIO_Init();
+	
 	
 	buckboost_init();
 	HAL_ADCEx_Calibration_Start(&hadc1,ADC_SINGLE_ENDED);
@@ -116,6 +118,13 @@ int main(void)
 	
 	HAL_TIM_Base_Start_IT(&htim6);
 
+
+  	OLED_Init();
+ OLED_ShowChar(0, 0, 'A', FontSize8x16, 1);
+  OLED_ShowStr(0, 2, (uint8_t *)"123abc!@#$^", FontSize6x8, 0);
+  OLED_ShowCN(0, 6, 1, 1);
+  OLED_LocalFill(70, 3, 80, 4, Bright);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -125,11 +134,9 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		//power_start();
-		//Usart1Printf("fuck\n");
-		HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
-		HAL_Delay(500);
-		//HAL_Delay(100);
+	 
+
+	//	HAL_Delay(100);
   }
   /* USER CODE END 3 */
 }

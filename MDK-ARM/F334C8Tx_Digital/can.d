@@ -40,3 +40,6 @@ f334c8tx_digital\can.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_e
 f334c8tx_digital\can.o: .\user\buckboost.h
 f334c8tx_digital\can.o: ../Core/Inc/main.h
 f334c8tx_digital\can.o: .\user\pid.h
+f334c8tx_digital\can.o: .\user\oled\OLED_SSD1306.h
+f334c8tx_digital\can.o: .\user\oled\FontLib.h
+f334c8tx_digital\can.o: .\user\oled\software_i2c.h

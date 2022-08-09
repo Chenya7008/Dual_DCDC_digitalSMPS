@@ -22,12 +22,131 @@ Dialog DLL:      TCM.DLL V1.48.0.0
  
 <h2>Project:</h2>
 E:\SMPS\F334C8Tx_Digital\MDK-ARM\F334C8Tx_Digital.uvprojx
-Project File Date:  07/14/2022
+Project File Date:  08/08/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'F334C8Tx_Digital'
-"F334C8Tx_Digital\F334C8Tx_Digital.axf" - 0 Error(s), 0 Warning(s).
+assembling startup_stm32f334x8.s...
+compiling adc.c...
+.\user\buckboost.h(43): warning:  #1295-D: Deprecated declaration power_start - give arg types
+  extern void power_start();
+.\user\buckboost.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/adc.c: 2 warnings, 0 errors
+compiling can.c...
+.\user\buckboost.h(43): warning:  #1295-D: Deprecated declaration power_start - give arg types
+  extern void power_start();
+.\user\buckboost.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/can.c: 2 warnings, 0 errors
+compiling tim.c...
+.\user\buckboost.h(43): warning:  #1295-D: Deprecated declaration power_start - give arg types
+  extern void power_start();
+.\user\buckboost.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/tim.c: 2 warnings, 0 errors
+compiling dma.c...
+.\user\buckboost.h(43): warning:  #1295-D: Deprecated declaration power_start - give arg types
+  extern void power_start();
+.\user\buckboost.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/dma.c: 2 warnings, 0 errors
+compiling gpio.c...
+.\user\buckboost.h(43): warning:  #1295-D: Deprecated declaration power_start - give arg types
+  extern void power_start();
+.\user\buckboost.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/gpio.c: 2 warnings, 0 errors
+compiling stm32f3xx_it.c...
+.\user\buckboost.h(43): warning:  #1295-D: Deprecated declaration power_start - give arg types
+  extern void power_start();
+.\user\buckboost.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/stm32f3xx_it.c: 2 warnings, 0 errors
+compiling hrtim.c...
+.\user\buckboost.h(43): warning:  #1295-D: Deprecated declaration power_start - give arg types
+  extern void power_start();
+.\user\buckboost.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/hrtim.c: 2 warnings, 0 errors
+compiling Filter.c...
+.\user\buckboost.h(43): warning:  #1295-D: Deprecated declaration power_start - give arg types
+  extern void power_start();
+.\user\buckboost.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+Filter.c(14): warning:  #1-D: last line of file ends without a newline
+  }
+Filter.c: 3 warnings, 0 errors
+compiling buckboost.c...
+.\user\buckboost.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+user\buckboost.h(43): warning:  #1295-D: Deprecated declaration power_start - give arg types
+  extern void power_start();
+user\buckboost.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+user\buckboost.c(159): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		V_in = buff_1 /4095.0 *3.3f *  Fuck.Votage_ratio;
+user\buckboost.c(160): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		V_out = buff_2 /4095.0 *3.3f * Fuck.Votage_ratio;
+user\buckboost.c(162): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		Curr_out = (buff_3 /4095.0 *3.3f)*3.7636f - 0.0263f;
+user\buckboost.c(186): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	 capcurr *= 0.9;
+user\buckboost.c(240): warning:  #1-D: last line of file ends without a newline
+  	
+user\buckboost.c: 8 warnings, 0 errors
+compiling main.c...
+.\user\buckboost.h(43): warning:  #1295-D: Deprecated declaration power_start - give arg types
+  extern void power_start();
+.\user\buckboost.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c: 2 warnings, 0 errors
+compiling usart.c...
+.\user\buckboost.h(43): warning:  #1295-D: Deprecated declaration power_start - give arg types
+  extern void power_start();
+.\user\buckboost.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/usart.c: 2 warnings, 0 errors
+compiling stm32f3xx_hal_cortex.c...
+compiling stm32f3xx_hal_rcc_ex.c...
+compiling stm32f3xx_hal_pwr_ex.c...
+compiling stm32f3xx_hal_pwr.c...
+compiling stm32f3xx_hal_msp.c...
+.\user\buckboost.h(43): warning:  #1295-D: Deprecated declaration power_start - give arg types
+  extern void power_start();
+.\user\buckboost.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/stm32f3xx_hal_msp.c: 2 warnings, 0 errors
+compiling stm32f3xx_hal_rcc.c...
+compiling stm32f3xx_hal_adc.c...
+compiling stm32f3xx_hal.c...
+compiling stm32f3xx_hal_gpio.c...
+compiling stm32f3xx_hal_dma.c...
+compiling stm32f3xx_hal_flash.c...
+compiling stm32f3xx_hal_i2c_ex.c...
+compiling stm32f3xx_hal_flash_ex.c...
+compiling stm32f3xx_hal_adc_ex.c...
+compiling stm32f3xx_hal_i2c.c...
+compiling stm32f3xx_hal_tim_ex.c...
+compiling stm32f3xx_hal_hrtim.c...
+compiling system_stm32f3xx.c...
+compiling stm32f3xx_hal_uart_ex.c...
+compiling OLED_SSD1306.c...
+.\user\buckboost.h(43): warning:  #1295-D: Deprecated declaration power_start - give arg types
+  extern void power_start();
+.\user\buckboost.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+user\oled\OLED_SSD1306.c: 2 warnings, 0 errors
+compiling stm32f3xx_hal_can.c...
+compiling stm32f3xx_hal_exti.c...
+compiling software_i2c.c...
+compiling stm32f3xx_hal_uart.c...
+compiling stm32f3xx_hal_tim.c...
+linking...
+Program Size: Code=18470 RO-data=3130 RW-data=76 ZI-data=2668  
+FromELF: creating hex file...
+"F334C8Tx_Digital\F334C8Tx_Digital.axf" - 0 Error(s), 33 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -50,7 +169,7 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.4.0
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:23
 </pre>
 </body>
 </html>

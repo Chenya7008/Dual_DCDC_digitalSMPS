@@ -39,5 +39,9 @@ f334c8tx_digital\buckboost.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_
 f334c8tx_digital\buckboost.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h
 f334c8tx_digital\buckboost.o: .\user\buckboost.h
 f334c8tx_digital\buckboost.o: .\user\pid.h
+f334c8tx_digital\buckboost.o: .\user\oled\OLED_SSD1306.h
+f334c8tx_digital\buckboost.o: ../Core/Inc/main.h
+f334c8tx_digital\buckboost.o: .\user\oled\FontLib.h
+f334c8tx_digital\buckboost.o: .\user\oled\software_i2c.h
 f334c8tx_digital\buckboost.o: ..\MDK-ARM\Filter.h
 f334c8tx_digital\buckboost.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

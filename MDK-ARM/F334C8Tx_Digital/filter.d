@@ -40,3 +40,6 @@ f334c8tx_digital\filter.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uar
 f334c8tx_digital\filter.o: .\user\buckboost.h
 f334c8tx_digital\filter.o: ../Core/Inc/main.h
 f334c8tx_digital\filter.o: .\user\pid.h
+f334c8tx_digital\filter.o: .\user\oled\OLED_SSD1306.h
+f334c8tx_digital\filter.o: .\user\oled\FontLib.h
+f334c8tx_digital\filter.o: .\user\oled\software_i2c.h

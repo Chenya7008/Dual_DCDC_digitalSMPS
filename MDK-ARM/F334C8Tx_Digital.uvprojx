@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F334x8</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;                                                                                    ../Drivers/STM32F3xx_HAL_Driver/Inc;                                                                                    ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy;                                                                                    ../Drivers/CMSIS/Device/ST/STM32F3xx/Include;                                                                                    ../Drivers/CMSIS/Include;                                                                                    .\user;                                                                                    ..\MDK-ARM</IncludePath>
+              <IncludePath>../Core/Inc; ../Drivers/STM32F3xx_HAL_Driver/Inc; ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy; ../Drivers/CMSIS/Device/ST/STM32F3xx/Include; ../Drivers/CMSIS/Include; .\user; ..\MDK-ARM; .\user\oled</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -735,6 +735,46 @@
               <FileName>system_stm32f3xx.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/system_stm32f3xx.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Display</GroupName>
+          <Files>
+            <File>
+              <FileName>Font_CN.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\user\oled\Font_CN.c</FilePath>
+            </File>
+            <File>
+              <FileName>Font_EN.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\user\oled\Font_EN.c</FilePath>
+            </File>
+            <File>
+              <FileName>OLED_SSD1306.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\user\oled\OLED_SSD1306.c</FilePath>
+            </File>
+            <File>
+              <FileName>OLED_SSD1306.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\user\oled\OLED_SSD1306.h</FilePath>
+            </File>
+            <File>
+              <FileName>FontLib.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\user\oled\FontLib.h</FilePath>
+            </File>
+            <File>
+              <FileName>software_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\user\oled\software_i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>software_i2c.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\user\oled\software_i2c.h</FilePath>
             </File>
           </Files>
         </Group>
